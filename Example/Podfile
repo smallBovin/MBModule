@@ -1,0 +1,6 @@
+use_frameworks!
+target 'MBModule_Tests' do
+  pod 'MBModule', :path => '../'
+  
+  
+end
