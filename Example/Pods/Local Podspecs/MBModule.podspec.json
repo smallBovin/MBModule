@@ -1,7 +1,7 @@
 {
   "name": "MBModule",
-  "version": "0.1.0",
-  "summary": "A short description of MBModule.",
+  "version": "1.0.0",
+  "summary": "基础组件库",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/smallBovin/MBModule",
   "license": {
@@ -13,10 +13,43 @@
   },
   "source": {
     "git": "https://github.com/smallBovin/MBModule.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MBModule/Classes/**/*"
+  "subspecs": [
+    {
+      "name": "Category",
+      "source_files": "MBModule/Classes/Category/*{h,m}",
+      "frameworks": [
+        "UIKit",
+        "Foundation"
+      ]
+    },
+    {
+      "name": "MBAlertView",
+      "source_files": "MBModule/Classes/MBAlertView/*.{h,m}",
+      "dependencies": {
+        "Masonry": [
+
+        ],
+        "MBProgressHUD": [
+
+        ]
+      }
+    },
+    {
+      "name": "RequestTool",
+      "source_files": "MBModule/Classes/RequestTool/*.{h,m}",
+      "dependencies": {
+        "AFNetworking": [
+
+        ],
+        "MBModule/Category": [
+
+        ]
+      }
+    }
+  ]
 }

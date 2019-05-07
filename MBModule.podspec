@@ -37,18 +37,18 @@ TODO: Add long description of the pod here.
   # }
 
    s.subspec 'Category' do|ss|
-     ss.source_files = 'MBBaseModule/Classes/Category/*{h,m}'
+     ss.source_files = 'MBModule/Classes/Category/*{h,m}'
      ss.frameworks = 'UIKit','Foundation'
    end
    s.subspec 'MBAlertView' do|ss|
-       ss.source_files = 'MBBaseModule/Classes/MBAlertView/*.{h,m}'
+       ss.source_files = 'MBModule/Classes/MBAlertView/*.{h,m}'
        ss.dependency 'Masonry'
        ss.dependency 'MBProgressHUD'
    end
    s.subspec 'RequestTool' do|ss|
-       ss.source_files = 'MBBaseModule/Classes/RequestTool/*.{h,m}'
+       ss.source_files = 'MBModule/Classes/RequestTool/*.{h,m}'
        ss.dependency 'AFNetworking'
-       ss.dependency 'MBBaseModule/Category'
+       ss.dependency 'MBModule/Category'
    end
   
   # s.public_header_files = 'Pod/Classes/**/*.h'
