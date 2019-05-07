@@ -1,0 +1,6 @@
+framework module MBModule {
+  umbrella header "MBModule-umbrella.h"
+
+  export *
+  module * { export * }
+}

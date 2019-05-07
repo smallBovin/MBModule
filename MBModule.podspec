@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MBModule'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MBModule.'
+  s.version          = '1.0.0'
+  s.summary          = '基础组件库'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,12 +30,27 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MBModule/Classes/**/*'
+  # s.source_files = 'MBModule/Classes/**/*'
   
   # s.resource_bundles = {
   #   'MBModule' => ['MBModule/Assets/*.png']
   # }
 
+   s.subspec 'Category' do|ss|
+     ss.source_files = 'MBBaseModule/Classes/Category/*{h,m}'
+     ss.frameworks = 'UIKit','Foundation'
+   end
+   s.subspec 'MBAlertView' do|ss|
+       ss.source_files = 'MBBaseModule/Classes/MBAlertView/*.{h,m}'
+       ss.dependency 'Masonry'
+       ss.dependency 'MBProgressHUD'
+   end
+   s.subspec 'RequestTool' do|ss|
+       ss.source_files = 'MBBaseModule/Classes/RequestTool/*.{h,m}'
+       ss.dependency 'AFNetworking'
+       ss.dependency 'MBBaseModule/Category'
+   end
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'

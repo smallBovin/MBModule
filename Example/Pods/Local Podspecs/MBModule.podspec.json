@@ -1,0 +1,22 @@
+{
+  "name": "MBModule",
+  "version": "0.1.0",
+  "summary": "A short description of MBModule.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/smallBovin/MBModule",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "smallBovin": "bovin150@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/smallBovin/MBModule.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MBModule/Classes/**/*"
+}

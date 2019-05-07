@@ -1,0 +1,16 @@
+PODS:
+  - MBModule (0.1.0)
+
+DEPENDENCIES:
+  - MBModule (from `../`)
+
+EXTERNAL SOURCES:
+  MBModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MBModule: 1dc91766f50c377fcce8fe047bfc0b891f366e64
+
+PODFILE CHECKSUM: f6e94dcbc9afe8d3287c78af403bf20ff1618443
+
+COCOAPODS: 1.6.1
